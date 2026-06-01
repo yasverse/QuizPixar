@@ -1,0 +1,329 @@
+/* reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/* body geral */
+body{
+    background-color: black;
+}
+/* header e hero */
+header{
+    width:100%;
+    height:100vh;
+}
+
+.hero {
+    width: 100%;
+    height: 100%;
+    background-image: url("../Img/backgrounds/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.titulo01{
+    width:100%;
+    height:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.titulo01 img{
+    display:block;
+    width:60%;
+    transition: 0.3s ease-in-out;
+}
+
+.titulo01 img:hover{
+    transform: scale(1.05);
+}
+
+/* container de quiz */
+.container{
+    width:100%;
+    height:auto;
+    max-height: 800px;
+    overflow-x: auto;  
+}
+
+.cards{
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+}
+
+.cards::-webkit-scrollbar{
+    display: none;
+}
+
+.cards{
+    display: grid;
+    grid-auto-flow: column;
+    gap:1.2rem;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards img{
+    display:block;
+    margin-top: auto;
+    margin-bottom: auto;
+    width:500px;
+    transition: 0.3s ease-in-out;
+
+}
+
+.cardPrincipal img{
+    width:600px;
+    display:block;
+    transition: 0.3s ease-in-out;
+}
+/* Citação */
+.frase{
+    width:100%;
+    height:300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1{
+    font-size: 1.5rem;
+    font-weight: normal;
+    font-family:'Montserrat' ;
+    color:white;
+}
+
+/* Img de Texto Linha temporal */
+.texto{
+    width:100%;
+    display:flex;
+    justify-content:flex-end;
+    align-items:flex-end;
+}
+
+.texto img{
+    width:50%;
+}
+/* Linha do tempo */
+.linhaTemp{
+    margin-top: 30px;
+    width:95%;
+    height:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.linhaTemp img{
+    display:block;
+    width:50%;
+    height:auto;
+    transition: 0.3s ease-in-out;
+
+}
+
+.linhaTemp:hover{
+    transform: scale(1.01);
+}
+
+/* Img Texto Objetivos */
+.texto2{
+    width:100%;
+    display:flex;
+    justify-content:flex-start;
+    align-items:flex-start;
+    margin-bottom: 50px;
+
+}
+
+.texto2 img{
+    width:50%;
+}
+
+
+/* Cards de Objetivo */
+.cards-section{
+    width:100%;
+    height:auto;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:3rem;
+   
+}
+
+.cards-Ex{
+    margin-top: 60px;
+    width:350px;
+    height:400px;
+    padding: 10px;
+    border-radius: 30px;
+    background: linear-gradient(to top, #fff, #9400ad);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Poppins;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    transition: 0.3s ease-in-out;
+
+}
+
+.cards-Ex:hover{
+    transform: scale(1.01);
+
+}
+
+.cards1-Ex{
+    width:400px;
+    height:500px;
+    border-radius: 30px;
+    background: linear-gradient(to top, #fff, #1556ad);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Poppins;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    transition: 0.3s ease-in-out;
+    margin-bottom: 50px;
+}
+
+.cards1-Ex:hover{
+    transform: scale(1.01);
+
+}
+
+.cards1-Ex img{
+    width:90%;
+    height:auto;
+}
+
+.cards-Ex img{
+    width:80%;
+    height:auto;
+}
+
+/* Conversa entre personagens */
+.chat{
+    width:100%;
+    height:auto;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.chat img{
+    width:100%;
+    height:auto;
+}
+
+/* Botao de direcionamento para q */
+.btn{
+    width:100%;
+    height:auto;
+    min-height:200px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.btn img{
+    width:50%;
+    height:auto;
+}
+
+.footer{
+    width:100%;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    height:auto;
+    min-height:300px;
+    background:rgba(255, 255, 255, 0.55);
+    background: linear-gradient(to top, #655b66,#000000);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+}
+
+.icons{
+   
+    width:80%;
+    height:auto;
+    padding:80px;
+    border-radius: 20px;
+     background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+     position:relative;
+    z-index:1 ;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    margin: 0;
+    padding: 0;
+}
+
+li img{
+width:20px;
+
+}
+
+.logo img{
+width:100px;
+}
+
+hr{
+    height:40px;
+}
+p{
+    font-family: 'Poppins';
+    color:white;
+}
+
+.efeito01{
+    position:absolute;
+    width:10%;
+    min-width: 220px;
+    height:auto;
+    left:8%;     
+    bottom:50px;  
+    z-index:10;   
+}
+.efeito01 img{
+    width:10%;
+    min-width: 220px;
+    height:auto;
+}
+
+.efeito02{
+    position:absolute;
+    width:10%;
+    min-width: 220px;
+    height:auto;
+    right:8%;     
+    bottom:20px;  
+    z-index:10;   
+}
+
+.efeito02 img{
+    width:10%;
+    min-width: 220px;
+    height:auto;
+}

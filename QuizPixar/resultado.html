@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado do Quiz - Pixar</title>
+    <link rel="stylesheet" href="Css/resultado.css">
+    <link rel="stylesheet" href="Css/header.css">
+    <link rel="stylesheet" href="Css/resultado.css">
+        <style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+</style>
+</head>
+<!-- identificador da pagina -->
+<body data-questao="resultado">
+
+    <!-- header -->
+    <header>
+        <section class="nav-bar">
+            <ul>
+                <li class="logo"><img src="../img/logos/pixarLogo.png"></li>
+                <li><a href="index.html"><img src="../img/logos/home.png">Home </a></li>
+                <li><a href="index.html"><img src="../img/logos/objetivo.png"> Objetivo </a></li>
+                <li><a href="index.html"><img src="../img/logos/personagens.png"> Personagens Pixar</a></li>
+            </ul>
+        </section>
+    </header>      
+
+    <!-- Container e coisas do personagem  -->
+    <main class="resultado-container">
+        <!-- img botao de status -->
+        <div class="status-imagem">
+            <img src="../img/botaos/Qfinalizado.png" alt="Quiz Finalizado">
+        </div>
+
+        <!-- Conteúdo principal -->
+        <div class="conteudo-principal">
+            <!-- texto de resultado (vertical ;p) -->
+            <div class="texto-vertical">
+                RESULTADO QUIZ: <span id="topo-nome-personagem">...</span>
+            </div>
+
+            <!-- Card do personagem img -->
+            <section class="cardPersonagem">
+                <img src="" alt="Personagem" id="personagem-imagem" class="imagem-flutuante">
+
+                <!-- Conteúdo do card - nome resultado -->
+                <div class="conteudoCard">
+                    <h2 class="nome-personagem" id="personagem-nome">...</h2>
+
+                    <!--card informativos lado a lado -->
+                    <div class="cardInfos">
+                        <!-- card de qtd de pontos -->
+                        <div class="caixa-compatibilidade">
+                            <p id="personagem-pontos">0 Pontos</p>
+                        </div>
+                        <!-- img de poster do filme -->
+                        <img src="../img/logos/personagens/divertidamentePoster.png" alt="Filme Poster" class="posterFilmes" id="personagem-filme-poster">
+                    </div>
+
+                    <!-- frase de descricao do personagem divo -->
+                    <p class="descricaoPersonagens" id="personagem-descricao">
+                        Carregando o seu resultado...
+                    </p>
+
+                    <!-- card curiosidades -->
+                    <div class="bloco-info">
+                        <h3 class="titulo-bloco" id="titulo-curiosidade">Curiosidades</h3>
+                        <div class="caixa-verde">
+                            <p id="personagem-curiosidade">...</p>
+                        </div>
+                    </div>
+
+                    <!-- card de frases rs -->
+                    <div class="bloco-info">
+                        <h3 class="titulo-bloco">Uma frase para você</h3>
+                        <div class="caixa-verde">
+                            <p class="frase" id="personagem-frase">...</p>
+                            <p class="autor" id="personagem-autor">...</p>
+                        </div>
+                    </div>
+
+                    <!-- card de botoes -->
+                    <div class="container-botoes">
+                        <button class="btn" id="btn-refazer"><i class="btnRefazerQuiz"></i> Refazer quiz</button>
+                        <button class="btn"><i class="btnCompartilhar"></i> Compartilhar</button>
+                    </div>
+                    <a href="index.html" class="link-voltar"><i class="btnVoltar"></i> Voltar ao início</a>
+                </div>
+
+            </section>
+        </div>
+
+    </main>
+
+    <script src="JavaScript/bancoDados.js"></script>
+    <script src="JavaScript/bdResultados.js"></script>
+    <script src="JavaScript/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+/* Configuracoes gerais */
+.footer{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:auto;
+    min-height:200px;
+    background:rgba(255, 255, 255, 0.55);
+    background: linear-gradient(to top, #655b66,#000000);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+}
+
+/* Icons  */
+.icons{
+    width:80%;
+    height:auto;
+    padding:80px;
+    border-radius: 20px;
+     background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+     position:relative;
+    z-index:1 ;
+}
+/* Lista de ícones */
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    margin: 0;
+    padding: 0;
+}
+ /* tamanho das img */
+li img{
+width:20px;
+
+}
+
+.logo img{
+width:100px;
+}
+
+/* linha que separa */
+hr{
+    height:40px;
+}
+p{
+    font-family: 'Poppins';
+    color:white;
+}
+
+/* img de efeito */
+.efeito01{
+    position:absolute;
+    width:10%;
+    min-width: 220px;
+    height:auto;
+    left:8%;     
+    bottom:50px;  
+    z-index:10;   
+}
+.efeito01 img{
+    width:10%;
+    min-width: 220px;
+    height:auto;
+}
+
+.efeito02{
+    position:absolute;
+    width:10%;
+    min-width: 220px;
+    height:auto;
+    right:8%;     
+    bottom:10px;  
+    z-index:10;   
+}
+
+.efeito02 img{
+    width:20px;
+    height:auto;
+}
